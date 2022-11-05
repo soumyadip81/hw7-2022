@@ -61,11 +61,11 @@ document.getElementById('mute').addEventListener("click", function() {
 	
     if(video.muted === true){
 		video.muted = false;
-		document.getElementById('mute').innerHTML = "mute";
+		document.getElementById('mute').innerHTML = "Mute";
 	}
 	else{
 		video.muted = true;
-		document.getElementById('mute').innerHTML = "unmute";
+		document.getElementById('mute').innerHTML = "Unmute";
 	}
 	
 });
@@ -80,7 +80,7 @@ let buttonArray = ['vintage','orig']
 for(let i = 0; i < buttonArray.length; ++i){
 	document.getElementById(buttonArray[i]).addEventListener("click", function() {
 		console.log("change classes");
-	document.querySelector('.video').classList.toggle("oldSchool");
+	document.querySelector('video').classList.toggle("oldSchool");
 	});
 		
 }
