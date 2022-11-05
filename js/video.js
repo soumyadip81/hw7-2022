@@ -76,11 +76,19 @@ document.getElementById('slider').addEventListener("change", function() {
 	document.getElementById('volume').innerHTML = document.getElementById('slider').value + '%';
 });
 
-let buttonArray = ['vintage','orig']
+/*let buttonArray = ['vintage','orig']
 for(let i = 0; i < buttonArray.length; ++i){
 	document.getElementById(buttonArray[i]).addEventListener("click", function() {
 		console.log("change classes");
 	document.querySelector('video').classList.toggle("oldSchool");
 	});
 		
-}
+}*/
+document.getElementById('orig').addEventListener("click", function() {
+	console.log("change classes orig");
+    document.querySelector('video').classList.remove("oldSchool");
+});
+document.getElementById('vintage').addEventListener("click", function() {
+	console.log("change classes vintage");
+    document.querySelector('video').classList.add("oldSchool");
+});
