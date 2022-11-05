@@ -74,6 +74,7 @@ document.getElementById('slider').addEventListener("change", function() {
 	console.log("volume video");
 	
 	document.getElementById('volume').innerHTML = document.getElementById('slider').value + '%';
+	video.volume = document.getElementById('slider').value/100;
 });
 
 /*let buttonArray = ['vintage','orig']
